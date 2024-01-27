@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Gold Shades Login Page</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #ffd700, #b8860b, #d4af37);
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #daa520;
+            border-radius: 6px;
+            margin-top: 6px;
+            color: #333;
+        }
+
+        .login-btn {
+            background-color: #daa520;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #b8860b;
+        }
+
+        h2 {
+            color: #daa520;
+            margin-bottom: 20px;
+        }
+
+        .decoration {
+            font-size: 24px;
+            color: #daa520;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button class="login-btn" onclick="login()">Login</button>
+        <p class="decoration">🌟✨ Welcome! ✨🌟</p>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // In a real application, you would send the credentials to the server for authentication.
+            // This is just a simple example without actual authentication.
+
+            if (username === 'demo' && password === 'password') {
+                alert('Login successful!');
+                // Redirect to another page or perform other actions after successful login
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
